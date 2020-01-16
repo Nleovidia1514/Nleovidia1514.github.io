@@ -1,13 +1,218 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.background {
-    background-image: url('./images/Desert.jpg');
-    background-size: 100vw 100vh;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-width: 100vw;
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(150, 150, 150);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: black;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: 'Raleway', sans-serif;
+}
+
+.navigation-bar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  text-decoration: none;
+  background-color: white;
+  z-index: 99;
+  box-shadow: 0 5px 20px black;
+  transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -ms-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  color: black;
+}
+
+.navigation-bar.opaque {
+    background-color: transparent;
+    box-shadow: 0 0;
+    color: white;
+}
+
+.navigation-bar a {
+  color: inherit !important;
+  text-decoration: none !important;
+  margin: 10px;
+  font-size: 30px;
+  transition-duration: 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.navigation-bar a:hover {
+  border-bottom: 1px solid black;
+}
+
+.navigation-bar.opaque a:hover {
+    border-bottom: 1px solid white;
+}
+
+.cover {
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./images/background.jpg');
+  background-attachment: fixed;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.cover .cover-info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cover-title {
+  margin: 5px;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.cover-subtitle {
+  text-align: center;
+  color: white;
+}
+
+.divider {
+  font-size: 50px;
+  width: 5em;
+  height: 2px;
+  background-color: white;
+}
+
+.info {
+  box-shadow: 0 -5px 30px white;
+  background-color: black;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@keyframes float {
+  50% {
+    transform: translate(0, 20px);
+    -webkit-transform: translate(0, 20px);
+    -moz-transform: translate(0, 20px);
+    -ms-transform: translate(0, 20px);
+    -o-transform: translate(0, 20px);
+  }
+}
+
+@media (min-width: 769px) {
+  div.polaroid {
+    display: block;
+  }
+}
+
+.fab {
+  font-size: 100px !important;
+  color: blue;
+  font-size: 30px;
+  color: black;
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100px;
+}
+div.polaroid {
+  width: 284px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  box-shadow: 10px 10px 5px #000000;
+  text-align: center;
+}
+
+.polaroid-title {
+  color: black;
+}
+
+div.rotate-right {
+  float: left;
+  -ms-transform: rotate(7deg); /* IE 9 */
+  -webkit-transform: rotate(7deg); /* Safari */
+  transform: rotate(7deg);
+}
+
+div.rotate-left {
+  float: left;
+  -ms-transform: rotate(-8deg); /* IE 9 */
+  -webkit-transform: rotate(-8deg); /* Safari */
+  transform: rotate(-8deg);
+}
+
+.projects-sect {
     min-height: 100vh;
+    background-color: black;
+    padding: 20px;
+}
+
+
+.carousel-item{
+    height: 70vh;
+} 
+.carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption.opaque {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footer {
+    display: flex;
+    height: 90vh;
+    background-color: rgb(94, 94, 94);
+    justify-content: space-around;
 }
