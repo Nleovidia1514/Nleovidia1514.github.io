@@ -194,11 +194,17 @@ div.rotate-left {
   padding: 20px;
 }
 
+.projects-carousel {
+    width: 80vw;
+    margin: auto;
+}
+
 .carousel-item {
-  height: 80%;
+  height: 500px;
+  max-height: 70vh;
 }
 .carousel-item img {
-  height: 100%;
+  height: 100%; 
   width: 100%;
 }
 
@@ -239,6 +245,17 @@ article {
 
   .projects-sect {
     min-height: 30vh;
+    padding: 0;
+  }
+
+  .projects-carousel {
+      width: 100vw;
+      box-sizing: border-box;
+      margin: 0;
+  }
+
+  .carousel-item {
+      max-height: 40vh; 
   }
 
   .footer a {
