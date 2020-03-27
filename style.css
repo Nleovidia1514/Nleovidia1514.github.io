@@ -224,8 +224,11 @@ div.rotate-left {
   text-decoration: none !important;
   display: flex;
   align-items: center;
+  width: 50%;
+  margin: auto;
   color: black !important;
   justify-content: center;
+  word-break: break-word;
 }
 
 article {
